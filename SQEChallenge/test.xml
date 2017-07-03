@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<sounds>
+   <sound id="1" expectedResult="200" testType="Positive">
+      <q>appollo</q>
+      <limit>2</limit>
+      <apikey>DEMO_KEY</apikey>
+   </sound>
+   <sound id="2" expectedResult="403" testType="Positive">
+      <q>appollo</q>
+      <limit>6</limit>
+      <apikey>demo</apikey>
+   </sound>
+   <sound id="3" expectedResult="500" testType="Negative">
+      <q>appollo</q>
+      <limit>abc</limit>
+      <apikey>DEMO_KEY</apikey>
+   </sound>
+   <sound id="4" expectedResult="500" testType="Negative">
+      <limit>2</limit>
+      <apikey>DEMO_KEY</apikey>
+   </sound>
+</sounds>
